@@ -15,8 +15,7 @@ double mul(double a, double b)
     return a * b;
 }
 
-double div(double a, double b)
-{
+double division(double a, double b) {
     return a / b;
 }
 
