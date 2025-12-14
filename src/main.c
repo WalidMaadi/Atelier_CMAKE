@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
             fprintf(stderr, "Usage: %s div <a> <b>\n", argv[0]);
             return 1;
         }
-        result = div(a, b);
+        result = division(a, b);
 
     } else if (strcmp(op, "car") == 0) {
         if (argc != 3) {
