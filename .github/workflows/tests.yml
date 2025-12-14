@@ -1,0 +1,19 @@
+name: Automatisation des tests
+
+on: push
+
+jobs:
+  Compilation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compilation + tests CMake
+        run: |
+          mkdir -p build
+          cd build
+          cmake ..
+          make
+          make test
